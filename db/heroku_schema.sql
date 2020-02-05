@@ -1,4 +1,4 @@
-USE 
+USE yc5669fe5eih641g;
 CREATE TABLE burgers
 (
     id INT NOT NULL AUTO_INCREMENT,
