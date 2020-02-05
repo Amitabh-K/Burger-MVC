@@ -27,6 +27,8 @@ h1 {
     background-color: maroon;
     color: whitesmoke;
     margin-left: 1%;
+    justify-items: stretch;
+
 
 }
 
@@ -61,6 +63,8 @@ h3 {
 .section {
     border: 1px solid whitesmoke;
     color: whitesmoke;
+    padding: 1%;
+    
 }
 
 h4 {    
