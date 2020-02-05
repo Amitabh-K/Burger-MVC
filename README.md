@@ -3,18 +3,21 @@ Eat-Da-Burger is a restaurant app that lets users input the names of burgers the
 
 It is a simple full stack application that follows the MVC (model view controller) framework. The app utilizes express routing, handlebars.js, and stores data in a MySQL database. It is is very simple - there are two columns listed as "burgers ready for devouring," and "devoured burgers." Burgers listed as ready to be devoured have a button next to them called Devour! Clicking this will move the burger into the devoured burgers column.
 
+
+## Demo
+![alt text](public/assets/img/burger.gif "Demo")
+Live Link: https://burger-amitabh.herokuapp.com//
+
 ## Description
 A burger logger with MySQL, Node, Express, Handlebars and a homemade ORM.
 
 
 ## Table of Contents
 * [Getting Started](#Getting-Started)
-* [Demo](#demo)
 * [Credits](#credits)
 * [Technologies](#Technologies)
 
 ## Getting Started
-* Open in Visual Studio to build and run.
 
 #### App Setup
 
@@ -48,10 +51,6 @@ A burger logger with MySQL, Node, Express, Handlebars and a homemade ORM.
 
 # Technologies
 The app's database schema and seeds were created in the MySQL workbench, and the coding was done in VS Code using node.js, JavaScript, handlebars.js, and Express. A custom ORM was also utilized. CSS, Bootstrap and Google Fonts were used for the styling of the app.
-
-## Demo
-![alt text](public/assets/img/burger.gif "Demo")
-Live Link: https://burger-amitabh.herokuapp.com//
 
 ## Credits
 [UofTBootCamp](https://bootcamp.learn.utoronto.ca/coding/?utm_source=pardot&utm_campaign=cln_coding_new_em8&utm_medium=email&utm_term=cta-btn)
