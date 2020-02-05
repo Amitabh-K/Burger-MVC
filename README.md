@@ -6,7 +6,7 @@ It is a simple full stack application that follows the MVC (model view controlle
 
 ## Demo
 ![alt text](public/assets/img/burger.gif "Demo")
-Live Link: https://burger-amitabh.herokuapp.com//
+[Live Link](https://burger-amitabh.herokuapp.com/)
 
 ## Description
 A burger logger with MySQL, Node, Express, Handlebars and a homemade ORM.
