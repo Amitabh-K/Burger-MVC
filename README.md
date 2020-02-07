@@ -1,12 +1,19 @@
 # Eat-Da-Burger
+
 Eat-Da-Burger is a restaurant app that lets users input the names of burgers they'd like to eat.
 
-It is a simple full stack application that follows the MVC (model view controller) framework. The app utilizes express routing, handlebars.js, and stores data in a MySQL database. It is is very simple - there are two columns listed as "burgers ready for devouring," and "devoured burgers." Burgers listed as ready to be devoured have a button next to them called Devour! Clicking this will move the burger into the devoured burgers column.
+A full stack application with the front end implemented with Handlebars, CSS, and Bootstrap, and the back end with Node.js and Express. Data is stored in a MySQL database. HTML templating is done handled with the use of Handlebars.
+
+This application follows the MVC (model view controller) framework. The app utilizes express routing, handlebars.js, and stores data in a MySQL database. It is is very simple - there are two columns listed as "burgers ready for devouring," and "devoured burgers." Burgers listed as ready to be devoured have a button next to them called Devour! Clicking this will move the burger into the devoured burgers column.
 
 
 ## Demo
 ![alt text](public/assets/img/burger.gif "Demo")
+<<<<<<< HEAD
+
+=======
 [Live Link](https://burger-amitabh.herokuapp.com/)
+>>>>>>> 8b38a99ce9ea9ee6ca446952e7931cda4fb522ab
 
 ## Description
 A burger logger with MySQL, Node, Express, Handlebars and a homemade ORM.
@@ -16,41 +23,82 @@ A burger logger with MySQL, Node, Express, Handlebars and a homemade ORM.
 * [Getting Started](#Getting-Started)
 * [Credits](#credits)
 * [Technologies](#Technologies)
+* [Directory structure](#Directory-structure)
 
 ## Getting Started
 
-#### App Setup
+The application will be invoked with the following command: node app.js. 
 
-1. Create a GitHub repo called `burger` and clone it to your computer.
+```sh
+npm install
+Create MySQL Database as per the db file making necessary alternations in connections file
+   `then run npm install`
+   lastly 
+node server.js
 
-2. Make a package.json file by running `npm init` from the command line.
+# Or
 
-3. Install the Express npm package: `npm install express`.
+see the live demo
 
-4. Create a server.js file.
+```
 
-5. Install the Handlebars npm package: `npm install express-handlebars`.
 
-6. Install MySQL npm package: `npm install mysql`.
+### Live Link: https://burger-amitabh.herokuapp.com//
 
-7. Require the following npm packages inside of the server.js file:
-   * express
 
-#### DB Setup
 
-1. Inside your `burger` directory, create a folder named `db`.
+* Whenever a user submits a burger's name, the app will display the burger on the
+ left side of the page -- waiting to be devoured.
 
-2. In the `db` folder, create a file named `schema.sql`. Write SQL queries this file that do the following:
+* Each burger in the waiting area also has a `Devour it!` button. When the user
+ clicks it, the burger will move to the right side of the page.
 
-   * Create the `burgers_db`.
-   * Switch to or use the `burgers_db`.
-   * Create a `burgers` table with these fields:
-     * **id**: an auto incrementing int that serves as the primary key.
-     * **burger_name**: a string.
-     * **devoured**: a boolean.
+* Your app will store every burger in a database, whether devoured or not till it is deleted.
+
 
 # Technologies
 The app's database schema and seeds were created in the MySQL workbench, and the coding was done in VS Code using node.js, JavaScript, handlebars.js, and Express. A custom ORM was also utilized. CSS, Bootstrap and Google Fonts were used for the styling of the app.
+
+# Directory structure
+
+All the recommended files and directories from the steps above should look like the following structure:
+
+```
+.
+├── config
+│   ├── connection.js
+│   └── orm.js
+│ 
+├── controllers
+│   └── burgers_controller.js
+│
+├── db
+│   ├── schema.sql
+│   └── seeds.sql
+│
+├── models
+│   └── burger.js
+│ 
+├── node_modules
+│ 
+├── package.json
+│
+├── public
+│   └── assets
+│       ├── css
+│       │   └── burger_style.css
+│       └── img
+│           └── burger.png
+│   
+│
+├── server.js
+│
+└── views
+    ├── index.handlebars
+    └── layouts
+        └── main.handlebars
+```
+
 
 ## Credits
 [UofTBootCamp](https://bootcamp.learn.utoronto.ca/coding/?utm_source=pardot&utm_campaign=cln_coding_new_em8&utm_medium=email&utm_term=cta-btn)
