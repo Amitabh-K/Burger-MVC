@@ -9,11 +9,11 @@ This application follows the MVC (model view controller) framework. The app util
 
 ## Demo
 ![alt text](public/assets/img/burger.gif "Demo")
-<<<<<<< HEAD
+
 
 =======
 [Live Link](https://burger-amitabh.herokuapp.com/)
->>>>>>> 8b38a99ce9ea9ee6ca446952e7931cda4fb522ab
+
 
 ## Description
 A burger logger with MySQL, Node, Express, Handlebars and a homemade ORM.
