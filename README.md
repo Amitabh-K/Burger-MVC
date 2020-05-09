@@ -1,3 +1,5 @@
+[![HitCount](http://hits.dwyl.com/Amitabh-K/Burger-MVC.svg)](http://hits.dwyl.com/Amitabh-K/Burger-MVC)
+
 # Eat-Da-Burger
 
 Eat-Da-Burger is a restaurant app that lets users input the names of burgers they'd like to eat.
